@@ -19,6 +19,7 @@ body
     background:#fff;
     margin: 25px auto;
     display: flex;
+    
 }
 
 .left{
@@ -91,9 +92,6 @@ body
     align-items: center;
     justify-content: center;
     margin-right: 15px;
-   
-    
-   
 }
 .contact .li_wrap .text{
     width: calc(100% - 50px);
@@ -217,4 +215,44 @@ body
     height: 90px;
     background: #9153c9;
     
+}
+@media screen and (max-width: 800px){
+    .wrapper .Resume .right .header .name_role .name .role
+    {
+        display: none;
+    }
+    .wrapper .Resume .left .contact{
+        display: block;
+    }
+    .wrapper .Resume {
+        width:95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+    .wrapper .Resume .left ,
+    .wrapper .Resume .right {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 424px){
+    .wrapper .Resume .right{
+        padding: 20px 30px;
+    }
+    .wrapper .Resume .right .right_inner{
+        flex-direction: column;
+    }
+    .wrapper .Resume .right .right_inner .date{
+        padding: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        color: #fff;
+    }
+    .wrapper .Resume .right .right_inner .date:before,
+    .wrapper .Resume .right .right_inner .date:after{
+        display: none;
+    }
+    .wrapper .Resume .right .right_inner .about{
+        width: 100%;
+        padding: 0;
+    }
 }
