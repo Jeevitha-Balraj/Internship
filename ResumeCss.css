@@ -74,13 +74,12 @@ a:hover {
     padding:10px;
     position:fixed;
 }
-@media(min-width:600px)
+@media screen and(max-width:320px)
 {
  
-    div,body 
-    {
-        width: 100%;
-        height: auto;
-    };
+   .table .td .th .tr{
+    width: 100%;
+    height: auto;
+   }
 
 }
