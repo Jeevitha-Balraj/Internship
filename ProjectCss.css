@@ -234,14 +234,18 @@ body
         width: 100%;
     }
 }
-@media screen and (max-width: 424px){
-    .wrapper .Resume .right{
+@media screen and (max-width: 320px)
+{
+    .wrapper .Resume .right .right_inner .about
+    {
         padding: 20px 30px;
+    
     }
-    .wrapper .Resume .right .right_inner{
-        flex-direction: column;
+    .wrapper .Resume .right .right_inner .about{
+        
+        flex-direction: column; 
     }
-    .wrapper .Resume .right .right_inner .date{
+    .wrapper .Resume .right .right_inner  .date{
         padding: 0;
         margin-bottom: 5px;
         width: 100%;
@@ -251,8 +255,10 @@ body
     .wrapper .Resume .right .right_inner .date:after{
         display: none;
     }
-    .wrapper .Resume .right .right_inner .date .about{
+    .wrapper .Resume .right .right_inner .date {
         width: 100%;
         padding: 0;
     }
+    
 }
+
