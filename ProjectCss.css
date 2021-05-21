@@ -251,7 +251,7 @@ body
     .wrapper .Resume .right .right_inner .date:after{
         display: none;
     }
-    .wrapper .Resume .right .right_inner .about{
+    .wrapper .Resume .right .right_inner .date .about{
         width: 100%;
         padding: 0;
     }
