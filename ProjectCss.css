@@ -224,7 +224,7 @@ body
     .wrapper .Resume .left .contact{
         display: block;
     }
-    .wrapper .Resume {
+    .wrapper .Resume  {
         width:95%;
         margin: 10px auto;
         flex-direction: column;
@@ -239,7 +239,6 @@ body
     .wrapper .Resume .right .right_inner .about
     {
         padding: 20px 30px;
-    
     }
     .wrapper .Resume .right .right_inner .about{
         
@@ -255,6 +254,7 @@ body
     .wrapper .Resume .right .right_inner .date:after{
         display: none;
     }
+
     .wrapper .Resume .right .right_inner .date {
         width: 100%;
         padding: 0;
