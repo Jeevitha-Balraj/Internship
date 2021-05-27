@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+*{
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: #c4c4c4;
+    font-size: 14px;
+    line-height: 20px;
+}
+.Resume_wrapper{
+    display: flex;
+    width: 800px;
+    margin: 5px auto;
+    background: #fff;
+    padding: 10px;
+}
+.Resume_wrapper .Resume_left{
+    width: 35%;
+    background:  #292b2f;
+}
+.Resume_wrapper .Resume_left .Resume_img img{
+    width: 100%;
+    display: block;
+
+}
+.Resume_wrapper  h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+.Resume_wrapper .Resume_left .Resume_info{
+    color: #84828b;
+    letter-spacing: 1px;
+}
+.Resume_wrapper .Resume_left a{
+     text-decoration: none;
+    color: #84828b;
+}
+.Resume_wrapper .Resume_left .Resume_bottom{
+    padding: 20px 30px;
+}
+.Resume_wrapper .Resume_item{
+    padding: 20px 0;
+    border-bottom: 1px solid #9153c9;
+
+}
+.Resume_wrapper .Resume_item:last-child{
+    border-bottom: 0px;
+}
+.Resume_wrapper .Resume_left .Resume_namerole{
+    display: none;
+}
+.Resume_wrapper .Resume_left .Resume_namerole .name{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+.Resume_wrapper .Resume_left .Resume_namerole .role{
+    color: #84838b;
+}
+.Resume_wrapper .Resume_left .Resume_contact .Resume_info:last-child{
+    margin-top: 10px;
+}
+.Resume_wrapper .Resume_left .Resume_contact h2{
+    color: #fff;
+    margin-bottom: 2px;
+   
+}
+.Resume_wrapper .Resume_left .Resume_skills .skills_list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    
+
+}
+.Resume_wrapper .Resume_left .Resume_skills .skills_list .skills_bar p{
+    position: relative;
+    width: 125px;
+    height: 20px;
+    background: #fff;
+
+}
+.Resume_wrapper .Resume_left .Resume_skills .skills_list .skills_bar p span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9153c9;
+    width: 100%;
+    height: 100%;
+}
+.Resume_wrapper .Resume_Right{
+    width: 65%;
+    padding: 20px 40px;
+}
+.Resume_wrapper .Resume_Right .Resume_namerole .name{
+    color: #26252d;
+    font-size: 32px;
+   
+}
+.Resume_wrapper .Resume_Right .Resume_namerole .role{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 3%;
+}
+.Resume_wrapper .Resume_Right  h2{
+    color: #26252d;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.Resume_wrapper .Resume_Right .Resume_data{
+    display: flex;
+}
+.Resume_wrapper .Resume_Right .Resume_data .year{
+    padding-right: 35px;
+    width: 115px;
+    position: relative;
+}
+.Resume_wrapper .Resume_Right .Resume_data .content{
+    padding-left: 35px;
+    margin-bottom: 20px;
+    width: calc(100% - 115px);
+}
+.Resume_wrapper .Resume_Right .Resume_data .year:before{
+    content: "" ;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid #9153c9;;
+    border-radius: 50%;
+}
+.Resume_wrapper .Resume_Right .Resume_data .year:after{
+    content: "" ;
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #9153c9;
+}
+.Resume_wrapper .Resume_Right .Resume_data :last-child .year:after{
+  display: none;
+}
+.Resume_wrapper .Resume_Right .Resume_hobbies .Resume_info{
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+}
+.Resume_wrapper .Resume_Right .Resume_hobbies .hobbies .icon{
+    font-size: 38px;
+    color: #9153c9;;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 800px){
+    .Resume_wrapper .Resume_Right .Resume_namerole{
+        display: none;
+    }
+    .Resume_wrapper .Resume_left .Resume_namerole{
+        display: block;
+    }
+    .Resume_wrapper{
+        width: 95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+    .Resume_wrapper .Resume_left,
+    .Resume_wrapper .Resume_Right{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 424px){
+    .Resume_wrapper .Resume_Right{
+        padding: 20px 30px;
+    }
+    .Resume_wrapper .Resume_Right .Resume_data{
+        flex-direction: column;
+    }
+    .Resume_wrapper .Resume_Right .Resume_data .year{
+        padding: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        color: #9153c9;
+    }
+    .Resume_wrapper .Resume_Right .Resume_data .year:before,
+    .Resume_wrapper .Resume_Right .Resume_data .year:after{
+        display: none;
+    }
+    .Resume_wrapper .Resume_Right .Resume_data .content{
+        width: 100%;
+        padding: 0;
+    }
+    .Resume_wrapper .Resume_Right .hobbies .icon{
+        font-size: 24px;
+    }
+
+}
+    
