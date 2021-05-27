@@ -22,10 +22,13 @@ body{
     width: 35%;
     background:  #292b2f;
 }
+.Resume_wrapper .Resume_left .Resume_img {
+    padding: 10px 10px;
+}
 .Resume_wrapper .Resume_left .Resume_img img{
     width: 100%;
+    border-radius: 10px;
     display: block;
-
 }
 .Resume_wrapper  h2{
     color: #fff;
@@ -181,9 +184,6 @@ body{
     }
 }
 @media screen and (max-width: 424px){
-     .Resume_wrapper .Resume_left img{
-         width: 100%;
-     }
     .Resume_wrapper .Resume_Right{
         padding: 20px 30px;
     }
