@@ -181,6 +181,9 @@ body{
     }
 }
 @media screen and (max-width: 424px){
+     .Resume_wrapper .Resume_left img{
+         width: 100%;
+     }
     .Resume_wrapper .Resume_Right{
         padding: 20px 30px;
     }
